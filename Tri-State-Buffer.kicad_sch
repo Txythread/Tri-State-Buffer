@@ -628,6 +628,89 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Other:Single_Bit_Bus"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -3091,6 +3174,70 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 64.77 54.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00db4428-e587-4257-bd92-ab8e7b5756a4")
+		(property "Reference" "H3"
+			(at 67.31 53.3399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 67.31 55.8799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.1mm"
+			(at 64.77 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 64.77 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 64.77 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "Tri-State-Buffer"
+				(path "/f7a80528-dccf-4059-b99f-7b4cb9e64d79"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED")
 		(at 127 27.94 180)
 		(unit 1)
@@ -3237,6 +3384,91 @@
 			(project "Tri-State-Buffer"
 				(path "/f7a80528-dccf-4059-b99f-7b4cb9e64d79"
 					(reference "D8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x08")
+		(at 58.42 31.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "323376b6-d661-482d-b59e-5f54f9d14a5c")
+		(property "Reference" "J2"
+			(at 58.42 21.336 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x08"
+			(at 58.674 33.274 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
+			(at 58.42 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 58.42 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 58.42 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "d756ff5e-7d57-4746-bb95-600075badc85")
+		)
+		(pin "4"
+			(uuid "9e360243-a543-4714-8d2e-301f6e1139b4")
+		)
+		(pin "5"
+			(uuid "56514ae1-3db3-467f-afd3-3a6ab66b0e2a")
+		)
+		(pin "6"
+			(uuid "e14bacb9-d30a-4cb0-9ec9-ee158ed5d286")
+		)
+		(pin "7"
+			(uuid "88ce74d9-656f-4818-823f-ef55a053dd46")
+		)
+		(pin "8"
+			(uuid "2a368a66-db5f-4575-ba04-8c65a7baba56")
+		)
+		(pin "1"
+			(uuid "a8834a22-6154-4606-935d-dacf8400b3b1")
+		)
+		(pin "2"
+			(uuid "febe3af0-ca2a-432b-8ced-7acb48fbbb75")
+		)
+		(instances
+			(project "Tri-State-Buffer"
+				(path "/f7a80528-dccf-4059-b99f-7b4cb9e64d79"
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -3498,92 +3730,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x08")
-		(at 24.13 31.75 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4a619e2a-e1ff-448c-9b21-5b038cf8cc95")
-		(property "Reference" "J1"
-			(at 24.13 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_01x08"
-			(at 23.622 33.274 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 24.13 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 24.13 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 24.13 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d1024581-1abc-450a-85a7-2d4a7a9516fb")
-		)
-		(pin "2"
-			(uuid "2bb13c54-f793-4ea1-a617-0724a337a786")
-		)
-		(pin "3"
-			(uuid "d43634bb-5b64-49da-9f52-d7df903b2f8a")
-		)
-		(pin "4"
-			(uuid "08dca1e5-e80b-4316-9f85-95267241df15")
-		)
-		(pin "5"
-			(uuid "18645cda-0356-4a9e-9639-513c669d3c02")
-		)
-		(pin "6"
-			(uuid "6e7af500-76bc-4388-af4c-9603a49ac5ca")
-		)
-		(pin "7"
-			(uuid "33724333-c8f1-42b5-8a08-0de18aa018fd")
-		)
-		(pin "8"
-			(uuid "c6d0b71f-cd08-4ab4-b257-5f41d162069c")
-		)
-		(instances
-			(project ""
-				(path "/f7a80528-dccf-4059-b99f-7b4cb9e64d79"
-					(reference "J1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:LED")
 		(at 127 35.56 180)
 		(unit 1)
@@ -3791,6 +3937,70 @@
 			(project "Tri-State-Buffer"
 				(path "/f7a80528-dccf-4059-b99f-7b4cb9e64d79"
 					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 44.45 54.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "67564050-2762-4b6c-8ad6-4d19b0db808d")
+		(property "Reference" "H2"
+			(at 46.99 53.3399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 46.99 55.8799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.1mm"
+			(at 44.45 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 44.45 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 44.45 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "Tri-State-Buffer"
+				(path "/f7a80528-dccf-4059-b99f-7b4cb9e64d79"
+					(reference "H2")
 					(unit 1)
 				)
 			)
@@ -4037,91 +4247,6 @@
 			(project "Tri-State-Buffer"
 				(path "/f7a80528-dccf-4059-b99f-7b4cb9e64d79"
 					(reference "D2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x08")
-		(at 58.42 31.75 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8575bffb-47db-4e57-bbad-0b78abf6d228")
-		(property "Reference" "J2"
-			(at 58.42 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_01x08"
-			(at 58.928 33.274 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 58.42 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 58.42 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 58.42 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7e9dfc46-8676-40bc-944a-a36b0627d5b3")
-		)
-		(pin "2"
-			(uuid "c2099c2e-3234-4249-8210-18e95cb8772f")
-		)
-		(pin "3"
-			(uuid "812bf03b-e8e1-4d13-b325-ca40c8bd2e5a")
-		)
-		(pin "4"
-			(uuid "5b2bc787-feb6-4874-ba9d-5628c3e353be")
-		)
-		(pin "5"
-			(uuid "144ae146-7d55-42f1-9b3d-131450710f69")
-		)
-		(pin "6"
-			(uuid "fee7f5c9-3949-404a-8fcf-6724da813dd6")
-		)
-		(pin "7"
-			(uuid "9876a2a7-6570-4329-9dde-42038ae82b32")
-		)
-		(pin "8"
-			(uuid "aacbce09-d106-4a04-a1d5-4cb6e1693f3d")
-		)
-		(instances
-			(project "Tri-State-Buffer"
-				(path "/f7a80528-dccf-4059-b99f-7b4cb9e64d79"
-					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -4457,6 +4582,156 @@
 			(project "Tri-State-Buffer"
 				(path "/f7a80528-dccf-4059-b99f-7b4cb9e64d79"
 					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x08")
+		(at 24.13 31.75 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "aed1d965-b542-487a-a174-f3f693ba07d1")
+		(property "Reference" "J1"
+			(at 24.13 21.336 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x08"
+			(at 23.876 33.274 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
+			(at 24.13 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 24.13 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 24.13 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "1791e61d-92e9-4538-b985-5e265dd34de5")
+		)
+		(pin "4"
+			(uuid "7828c054-093e-4ff5-9e47-adbe7f51f09e")
+		)
+		(pin "5"
+			(uuid "ceaa97aa-53db-4421-9b75-8fa0e8503b69")
+		)
+		(pin "6"
+			(uuid "2ceb637c-9cf4-4f4d-bc1c-f6f1e47b9592")
+		)
+		(pin "7"
+			(uuid "020a4242-66cc-49b6-a5bd-9dcf04b86dcd")
+		)
+		(pin "8"
+			(uuid "9178380b-1c37-4b90-bebe-7887130d873d")
+		)
+		(pin "1"
+			(uuid "cd33f010-3a93-47e2-bfb6-de16265ef9c1")
+		)
+		(pin "2"
+			(uuid "4cbe5cb0-ff8e-4fba-b739-9e9fb3f285a8")
+		)
+		(instances
+			(project ""
+				(path "/f7a80528-dccf-4059-b99f-7b4cb9e64d79"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 24.13 54.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c2e0ca50-7df4-4f86-a584-2acede8c0331")
+		(property "Reference" "H1"
+			(at 26.67 53.3399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 26.67 55.8799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.1mm"
+			(at 24.13 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 24.13 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 24.13 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/f7a80528-dccf-4059-b99f-7b4cb9e64d79"
+					(reference "H1")
 					(unit 1)
 				)
 			)
